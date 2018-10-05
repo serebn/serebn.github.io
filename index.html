@@ -1,8 +1,139 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+      <div class="menu">
+      <a href="resume_2.pdf" > <div class="menu2">resumé</div></a> 
+      <a href="portfolio.html" > <div class="menu2">portfolio </div></a>
+      <a href="#section2"> <div class="menu2">skills</div> </a>
+      <a href="#section3" > <div class="menu2">lifestyle</div> </a>
+    </div> 
+    <H1 class="title">Hi! I'm Nikita
+      </H1>
+      <h2 class="subtitle">Welcome to my website
+      </h2>
+  </div>
+
+
+  <div class="aboutme">
+    <h1 class="aboutme2">
+      Here is who I am
+    </h1>
+    <div class="face"> 
+      <div class="inface">
+    <img src="snapseed.jpg" class="face">
+      </div>
+    </div>
+    <p class="aboutme3">
+     Hello! I am Nikita Serebryanik, I am a diligent student at Rensselaer Polytechnic Institute. I am currently an undergraduate styding Information Technologies,Web Sciences, Business and Management.
+    </p>
+    <p class="aboutme3">
+     I love meet new people and take part in a great projects. Besides academics I take a great interest in the fields of<br> Graphic Design, Internet Marketing <br>and Social Engeneering.
+    </p>
+
+    <p class="aboutme3">
+     I am a great fan of good books<br> and movies, do a lot of different sports <br>and belive that travelling around the world is the best thing ever.
+    </p>
+    
+    
+  </div>
+
+  <div class="skills" id="section2">
+    <div class="ln"></div>
+    <h1 class="skills2">
+      My Skills
+    </h1>
+
+    <div class="skills3">
+      <h2>Technical</h2>
+      <p>Web Design (HTML5 + CSS3 +JS)</p>
+      <img src="75%scale.png">
+      <p>Web Development (PHP + MySql)</p>
+      <img src="60%scale.png">
+      <p>Print Design (Photoshop + Lightroom)</p>
+      <img src="35%scale.png">
+      <p>Python Programming</p>
+      <img src="90%scale.png">
+      <p>C++ Programming</p>
+      <img src="75%scale.png">
+      <p>Office 365</p>
+      <img src="90%scale.png">
+      <p>Social Media Marketing</p>
+      <img src="60%scale.png">
+      <h2>Personal</h2>
+      <ul>
+        <li>Creativity</li>
+        <li>Excellent Problem Solving Skills</li>
+        <li>Attention to details</li>
+        <li>Leadership</li>
+        <li>Passion</li>
+        <li>Fluency in Russian Lenguage</li>
+      </ul>
+
+    </div>
+    
+    </div>
+
+<div class="lifestyle" id="section3">
+  <div class="ln"></div>
+  <h1 class="lifestyle2">
+      Take a look on my lifestyle!
+    </h1>
+    <div class=slideshow>
+      <img src="slideshow.png">
+    </div>
+
+</div>
+
+
+<div class="contacts">
+  <div class="ln"></div>
+  <h1 class="lifestyle2">
+      Contact Me
+    </h1>
+    <br>
+    <div class="contacts2">
+      <a href="https://www.linkedin.com/in/nikita-serebryanik-536048154" target="_blank"><img src="linkedin.png" class="linkedin"></a>
+      <a href="mailto:nikitaser1999@gmail.com"><img src="email.png" class="email"></a>
+      <a href="https://www.instagram.com/nikita_serebryanik/" target="_blank"><img src="instagram.png" class="insta"></a>
+      <a href="https://www.facebook.com/niksereb" target="_blank"><img src="fb.png" class="fb"></a>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&#169 Copyright Nikita Serebryanik 2018</p>
+  </div>
+
+
+</body>
 </html>
